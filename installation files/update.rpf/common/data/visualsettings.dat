@@ -512,8 +512,8 @@ car.sirenlight.night.emissive.off	0.04
 car.emissiveMultiplier 2.00
 
 # Lod distances for vehicles
-car.lod.distance.high	40.00
-car.lod.distance.low	180.00
+car.lod.distance.high	50.00
+car.lod.distance.low	200.00
 
 # search lights...
 defaultsearchlight.length	100.0
@@ -1134,7 +1134,7 @@ temporalaa.enableFilter.screenSpaceShadows	1.0
 temporalaa.exposureScale			1.0
 temporalaa.exposureOffset			0.0
 
-//temporalaa.forceResponsiveVegetation		1.0
+temporalaa.forceResponsiveVegetation		1.0
 
 temporalaa.varianceGammaMin			0.5
 temporalaa.varianceGammaMax			1.25
@@ -1432,10 +1432,10 @@ fpv.motionblur.max.velocity	350.0
 // Motion blur for third person view
 defaultmotionblur.new.enabled			1
 defaultmotionblur.new.strength			0.2
-motionblur.MBTargetMinSpeed 0.1
-motionblur.MBTargetMaxSpeed 10.0
-motionblur.MBLowSpeedScale 0.75
-motionblur.MBHighSpeedScale 1.5
+motionblur.MBTargetMinSpeed 1.0
+motionblur.MBTargetMaxSpeed 100.0
+motionblur.MBLowSpeedScale 0.0
+motionblur.MBHighSpeedScale 10.0
 motionblur.MBCameraRotMinSpeed 0.0
 motionblur.MBCameraRotMaxSpeed 5.0
 motionblur.MBLowCameraRotSpeedScale 1.0
@@ -1445,10 +1445,10 @@ motionblur.MassiveBlurThreshold		330
 // Motion blur for First person view
 defaultmotionblur.fpv.enabled		1
 defaultmotionblur.fpv.strength		0.2
-motionblur.fpv.MBTargetMinSpeed 0.1
-motionblur.fpv.MBTargetMaxSpeed 10.0
-motionblur.fpv.MBLowSpeedScale 0.75
-motionblur.fpv.MBHighSpeedScale 1.25
+motionblur.fpv.MBTargetMinSpeed 1.0
+motionblur.fpv.MBTargetMaxSpeed 100.0
+motionblur.fpv.MBLowSpeedScale 0.0
+motionblur.fpv.MBHighSpeedScale 5.0
 motionblur.fpv.MBCameraRotMinSpeed 0.0
 motionblur.fpv.MBCameraRotMaxSpeed 5.0
 motionblur.fpv.MBLowCameraRotSpeedScale 0.75
@@ -1457,7 +1457,7 @@ motionblur.fpv.MBHighCameraRotSpeedScale 0.5
 lights.screenshadow.numSamples            0.0
 lights.screenshadow.raylength             0.057
 lights.screenshadow.cutoff                0.05
-lights.screenshadow.strength              0.6
+lights.screenshadow.strength              1.0
 lights.screenshadow.noldist               80.0
 lights.screenshadow.wraplightingdepthbias 0.035
 
